@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.d121201085.todolist.data.models.ToDoData
 import com.d121201085.todolist.databinding.RowLayoutBinding
-import com.d121201085.todolist.fragments.list.adapter.ToDoDiffUtil
 
 class ListAdapter : RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
 

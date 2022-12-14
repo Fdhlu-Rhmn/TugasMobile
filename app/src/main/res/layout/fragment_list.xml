@@ -13,7 +13,7 @@
         android:id="@+id/listLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".fragments.list.ListFragment">
+        tools:context="com.d121201085.todolist.fragments.list.ListFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"

@@ -7,7 +7,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.databinding.BindingAdapter
 import androidx.lifecycle.MutableLiveData
 import androidx.navigation.findNavController
-import com.example.todoapp.R
+import com.d121201085.todolist.R
 import com.d121201085.todolist.data.models.Priority
 import com.d121201085.todolist.data.models.ToDoData
 import com.d121201085.todolist.fragments.list.ListFragmentDirections

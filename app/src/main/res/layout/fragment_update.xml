@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="24dp"
-        tools:context=".fragments.update.UpdateFragment">
+        tools:context="com.d121201085.todolist.fragments.update.UpdateFragment">
 
         <EditText
             android:id="@+id/current_title_et"

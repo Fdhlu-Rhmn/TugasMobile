@@ -20,7 +20,6 @@ import com.d121201085.todolist.data.viewmodel.ToDoViewModel
 import com.d121201085.todolist.databinding.FragmentListBinding
 import com.d121201085.todolist.fragments.SharedViewModel
 import com.d121201085.todolist.fragments.list.adapter.ListAdapter
-import com.d121201085.todolist.fragments.list.SwipeToDelete
 import com.d121201085.todolist.utils.hideKeyboard
 import com.d121201085.todolist.utils.observeOnce
 import com.google.android.material.snackbar.Snackbar
