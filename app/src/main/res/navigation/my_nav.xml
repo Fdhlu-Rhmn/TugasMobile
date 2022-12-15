@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
@@ -7,52 +8,36 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.d121201085.todolist.fragments.list.ListFragment"
-        android:label="ToDo List"
+        android:name="com.d121201085.aplikasimanage.fragments.list.ListFragment"
+        android:label="list"
         tools:layout="@layout/fragment_list" >
         <action
-            android:id="@+id/action_listFragment_to_addFragment"
-            app:destination="@id/addFragment"
-            app:enterAnim="@anim/from_right"
-            app:exitAnim="@anim/to_left"
-            app:popEnterAnim="@anim/from_left"
-            app:popExitAnim="@anim/to_right" />
+            android:id="@+id/action_listFragment_to_addFragments"
+            app:destination="@id/addFragments" />
         <action
             android:id="@+id/action_listFragment_to_updateFragment"
-            app:destination="@id/updateFragment"
-            app:enterAnim="@anim/from_left"
-            app:exitAnim="@anim/to_right"
-            app:popEnterAnim="@anim/from_right"
-            app:popExitAnim="@anim/to_left" />
+            app:destination="@id/updateFragment" />
     </fragment>
     <fragment
-        android:id="@+id/addFragment"
-        android:name="com.d121201085.todolist.fragments.add.AddFragment"
-        android:label="Add"
-        tools:layout="@layout/fragment_add" >
+        android:id="@+id/addFragments"
+        android:name="com.d121201085.aplikasimanage.fragments.add.AddFragments"
+        android:label="add"
+        tools:layout="@layout/fragment_add_fragments" >
         <action
-            android:id="@+id/action_addFragment_to_listFragment"
-            app:destination="@id/listFragment"
-            app:enterAnim="@anim/from_left"
-            app:exitAnim="@anim/to_right"
-            app:launchSingleTop="false"
-            app:popUpTo="@id/listFragment"
-            app:popUpToInclusive="true" />
+            android:id="@+id/action_addFragments_to_listFragment"
+            app:destination="@id/listFragment" />
     </fragment>
     <fragment
         android:id="@+id/updateFragment"
-        android:name="com.d121201085.todolist.fragments.update.UpdateFragment"
-        android:label="Update"
+        android:name="com.d121201085.aplikasimanage.fragments.update.UpdateFragment"
+        android:label="update"
         tools:layout="@layout/fragment_update" >
         <action
             android:id="@+id/action_updateFragment_to_listFragment"
-            app:destination="@id/listFragment"
-            app:enterAnim="@anim/from_right"
-            app:exitAnim="@anim/to_left"
-            app:popUpTo="@id/listFragment"
-            app:popUpToInclusive="true" />
+            app:destination="@id/listFragment" />
         <argument
-            android:name="currentItem"
-            app:argType="com.d121201085.todolist.data.models.ToDoData" />
+            android:name="currentTask"
+            app:argType="com.d121201085.aplikasimanage.model.Tugas" />
     </fragment>
+
 </navigation>
